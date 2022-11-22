@@ -20,11 +20,11 @@ fn main() { // main function used to run the program
 
         let guess: u32 = match guess.trim().parse() { // here another unmutatable variable is created, with the name "guess", just like the earlier String variant. This shadows the old guess with a new one of the type unsigned 32-bit integer, which is the correct type for the rng. 
                                                       // match is another error handeling method, where instead of crashing the program, it runs the bit of code we till it. 
-            Ok(num) => num, // 
-            Err(_) => continue, // in case of an error enum with any value(_), it runs "continue", which just runs the loop again, instead of crashing. 
+            Ok(num) => num, // the method parse returns an Result, which is either an "Ok" or "Err" enum. If the input is parsable, the output is returned as a numer in the Ok enum. 
+            Err(_) => continue, // in case the input is not parsable, fx. a letter instead of a number, it will return a value in the Err enum, where the "_" means that it runs the in Err, regardless of what is actually returned through the Err enum.
         };
 
-        println!("You guessed: {guess}"); // print to console, where {guess} is ???
+        println!("You guessed: {guess}"); // print to console, where {guess} is the variable "guess" in form of a printable string? 
 
         match guess.cmp(&secret_number) {  // another match, to handle the outcome of the comparison. The function "cmp" is executed on the guess variable, which is what is used to actually compare the two values, in this case "secret_number", and it returns an "Ordering", which will be handled below
             Ordering::Less => println!("Too small!"),  // in case the input, which comes from "guess" is lower than the secret number, it will be caught in the Ordering::Less, where it will print to console, that the input value was smaller than the secret randomly generated value 
