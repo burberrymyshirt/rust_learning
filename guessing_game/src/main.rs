@@ -31,7 +31,7 @@ fn main() { // main function used to run the program
             Ordering::Greater => println!("Too big!"), // this is the same, but in case the input is larger than the random number
             Ordering::Equal => { // this is in case the input number is the same as the random number, and will print out a win message, where it will break the loop afterwards. 
                 println!("You win!");
-                break;
+                break; // ez break gg B-)
             }    
         }
     }
