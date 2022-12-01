@@ -1,6 +1,6 @@
 // fn main() {
 //     let mut counter = 0;
-    
+	
 //     let result = loop {
 //         counter += 1; 
 
@@ -55,9 +55,9 @@
 // }
 
 fn main() {
-    for number in (1..4).rev() {
-        println!("{number}");
-    }
-    println!("LIFTOFF!!!");
+	for number in (1..4).rev() {
+		println!("{number}");
+	}
+	println!("LIFTOFF!!!");
 }
 
