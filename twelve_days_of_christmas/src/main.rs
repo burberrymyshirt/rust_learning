@@ -9,12 +9,25 @@ fn main() {
 	let b = ["first", "second", "third", "fourth", "fifth", "sixth", 
 		"seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
 
+
+	let mut i = 0;
+
 		for number in b {
 			println!("On the {number} day of christmas,");
 			println!("my true love gave to me");
 
+			for n in (0..i + 1).rev() {
+				
+				let temp = a[n];
 
+				println!("{temp}");
 
+				i += 1;
+
+				
+			}
+
+			println!();
 		}
 
 }
