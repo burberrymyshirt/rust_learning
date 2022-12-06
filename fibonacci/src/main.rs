@@ -30,7 +30,7 @@ fn fib(n: &u128) -> u128 {
 	if *n < 3 {
 		n3 = 1;
 	} else {
-		for _ in 3..*n + 1 {
+		for _ in 3..*n {
 			n3 = n1 + n2;
 			n1 = n2;
 			n2 = n3;
