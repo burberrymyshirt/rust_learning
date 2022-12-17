@@ -17,14 +17,14 @@ fn main() {
 			println!("my true love gave to me");
 
 			for n in (0..i + 1).rev() {
-				
+
 				let temp = a[n];
 
 				println!("{temp}");
 
 			}
 			i += 1;
-			
+
 			println!();
 		}
 
