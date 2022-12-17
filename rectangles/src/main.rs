@@ -24,7 +24,7 @@
 // fn area(dimentions: (u32, u32)) -> u32 {
 //     return dimentions.0 * dimentions.1;
 // }
-
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
@@ -35,6 +35,8 @@ fn main() {
         width: 30,
         height: 50,
     };
+
+    println!("rect1 is {:?}", rect1);
 
     println!(
         "The area of the rectangle is {} square pixels.",
