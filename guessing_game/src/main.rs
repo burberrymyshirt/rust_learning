@@ -29,7 +29,7 @@ fn main() { // main function used to run the program
 		match guess.cmp(&secret_number) {  // another match, to handle the outcome of the comparison. The function "cmp" is executed on the guess variable, which is what is used to actually compare the two values, in this case "secret_number", and it returns an "Ordering", which will be handled below
 			Ordering::Less => println!("Too small!"),  // in case the input, which comes from "guess" is lower than the secret number, it will be caught in the Ordering::Less, where it will print to console, that the input value was smaller than the secret randomly generated value
 			Ordering::Greater => println!("Too big!"), // this is the same, but in case the input is larger than the random number
-			Ordering::Equal => { // this is in case the input number is the same as the random number, and will print out a win message, where it will break the loop afterwards.
+			Ordering::Equal => { // this is in case the input number is the same as the random number, and will print out a win message, where it will break the loop afterwards
 				println!("You win!");
 				break; // ez break gg B-)
 			}
