@@ -36,14 +36,16 @@ fn main() {
         height: 50,
     };
 
-    println!("rect1 is {:?}", rect1);
+    println!("rect1 is {} high and {} wide", rect1.height, rect1.width);
 
     println!(
         "The area of the rectangle is {} square pixels.",
-        area(&rect1)
+        rect1.area()
     );
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
-    return rectangle.width * rectangle.height;
+impl Rectangle {
+    fn area(&self) -> u32 {
+        return self.width * self.height;
+    }
 }
