@@ -31,7 +31,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    fn area(&self) -> u32 {
+    fn _area(&self) -> u32 {
         return self.width * self.height;
     }
 
@@ -63,7 +63,7 @@ fn main() {
         height: 45,
     };
 
-    let square = Rectangle::square(32);
+    let _square = Rectangle::square(32);
 
     println!("rect1 is {} high and {} wide", rect1.height, rect1.width);
 
