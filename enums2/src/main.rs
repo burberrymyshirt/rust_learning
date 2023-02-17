@@ -15,8 +15,3 @@ impl Message {
 		// empty function for demonstration purposes
 	}
 }
-
-
-
-
-
