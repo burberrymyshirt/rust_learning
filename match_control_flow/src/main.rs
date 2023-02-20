@@ -4,31 +4,31 @@ fn main() {
 }
 
 enum Coin {
-    Penny, 
-    Nickel,
-    Dime,
+    _Penny, 
+    _Nickel,
+    _Dime,
     Quarter(UsState),
 }
 
 #[derive(Debug)]
 enum UsState {
-    Alabama, 
-    Alaska,
-    California, 
-    Maine, 
-    Arizona,
-    Florida, 
+    _Alabama, 
+    _Alaska,
+    _California, 
+    _Maine, 
+    _Arizona,
+    _Florida, 
     Ohio,
 }
 
 fn value_in_cents(coin: Coin) -> u8 {
     match coin {
-        Coin::Penny => {
+        Coin::_Penny => {
             println!("Lucky Penny!");
             return 1;
         }, 
-        Coin::Nickel => 5,
-        Coin::Dime => 10,
+        Coin::_Nickel => 5,
+        Coin::_Dime => 10,
         Coin::Quarter(state) => {
 			println!("State quarter from {:?}!", state);
 			return 25;
