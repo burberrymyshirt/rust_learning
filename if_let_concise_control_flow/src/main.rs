@@ -11,12 +11,7 @@ fn main() {
 	if let Some(max) = config_max {
 		println!("The maximum is configured to be {}", max);
 	}
-
-
-
-
-
-
-
+	// you can include an else statement after the if let, corrosponding to
+	// "_" in the match statement.
 
 }
